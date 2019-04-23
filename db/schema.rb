@@ -10,6 +10,37 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 2019_04_23_185004) do
+
+  create_table "pets", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.string "nome"
+    t.date "data_nasc"
+    t.string "genero"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "tipos", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.string "tipo"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "usuarios", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.string "nome"
+    t.string "email"
+    t.string "senha"
+    t.string "rua"
+    t.string "cpf_cnpj"
+    t.string "bairro"
+    t.string "cidade"
+    t.string "estado"
+    t.string "pais"
+    t.string "numero"
+    t.string "complemento"
+    t.string "telefone"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
 end
