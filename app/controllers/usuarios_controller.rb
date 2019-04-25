@@ -20,7 +20,7 @@ class UsuariosController < ApplicationController
 
   # PUT /usuarios/:id
   def update
-    @usuario.update(usuario_params)
+    @usuario.update(usuario_params_update)
     head :no_content
   end
 
@@ -33,6 +33,11 @@ class UsuariosController < ApplicationController
   private
 
   def usuario_params
+    # whitelist params
+    params.permit(:email, :nome, :senha, :rua, :cpf_cnpj, :bairro, :cidade, :estado, :pais, :numero, :complemento, :telefone)
+  end
+
+  def usuario_params_update
     # whitelist params
     params.permit(:nome, :senha, :rua, :cpf_cnpj, :bairro, :cidade, :estado, :pais, :numero, :complemento, :telefone)
   end
