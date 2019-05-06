@@ -34,7 +34,7 @@ class PetsController < ApplicationController
 
   def pet_params
     # whitelist params
-    params.permit(:email, :nome, :senha, :rua, :cpf_cnpj, :bairro, :cidade, :estado, :pais, :numero, :complemento, :telefone)
+    params.permit(:nome, :data_nasc, :genero, :especie, :descricao, :id_usuario)
   end
 
 
