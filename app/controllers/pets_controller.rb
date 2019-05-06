@@ -9,7 +9,7 @@ class PetsController < ApplicationController
 
   # POST /pets
   def create
-    @pet = Pet.create!(usuario_params)
+    @pet = Pet.create!(pet_params)
     json_response(@pet, :created)
   end
 
@@ -20,7 +20,7 @@ class PetsController < ApplicationController
 
   # PUT /pets/:id
   def update
-    @pet.update(pet_params_update)
+    @pet.update(pet_params)
     head :no_content
   end
 
