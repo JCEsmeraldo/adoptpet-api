@@ -37,8 +37,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/database.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+            <state relative-caret-position="748">
+              <caret line="51" column="16" selection-start-line="51" selection-start-column="16" selection-end-line="51" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -64,6 +64,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>password_digest</find>
+      <find>DATABASE_URL</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -309,12 +310,12 @@
       <workItem from="1556814390307" duration="128000" />
       <workItem from="1556923388913" duration="3354000" />
       <workItem from="1557162683051" duration="601000" />
-      <workItem from="1557170974995" duration="848000" />
+      <workItem from="1557170974995" duration="1052000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20546000" />
+    <option name="totallyTimeSpent" value="20750000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1366" y="-2" width="1920" height="1082" extended-state="6" />
@@ -433,8 +434,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/database.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        <state relative-caret-position="748">
+          <caret line="51" column="16" selection-start-line="51" selection-start-column="16" selection-end-line="51" selection-end-column="16" />
         </state>
       </provider>
     </entry>
