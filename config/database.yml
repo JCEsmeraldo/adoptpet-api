@@ -49,6 +49,7 @@ test:
 #
 production:
   <<: *default
-  database: AdoptPet-API_production
-  username: AdoptPet-API
-  password: <%= ENV['ADOPTPET-API_DATABASE_PASSWORD'] %>
+  url: db4free.net
+  database: adoptpet
+  username: adoptpet
+  password: teste123
