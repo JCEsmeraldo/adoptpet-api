@@ -4,7 +4,7 @@ class PetsController < ApplicationController
   # GET /pets
   def index
     @pets = Pet.all
-    json_response(@pet)
+    json_response(@pets)
   end
 
   # POST /pets
@@ -38,7 +38,7 @@ class PetsController < ApplicationController
   end
 
 
-  def set_usuario
+  def set_pet
     @pet = Pet.find(params[:id])
   end
 end
