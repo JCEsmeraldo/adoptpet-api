@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_05_06_212522) do
+ActiveRecord::Schema.define(version: 2019_05_09_191125) do
 
   create_table "pets", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "nome"
@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(version: 2019_05_06_212522) do
     t.string "especie"
     t.string "descricao"
     t.integer "id_usuario"
+    t.string "porte"
   end
 
   create_table "tipos", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
