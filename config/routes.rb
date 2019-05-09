@@ -5,5 +5,7 @@ Rails.application.routes.draw do
   resources :pets do
   end
 
+  match "/login" => "usuarios#login", :via => :post
   get "pets/usuarios/:id" => "pets#pets_usuario", :constraints => { :id => /\d+/ }
+
 end

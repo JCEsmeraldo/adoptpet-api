@@ -1,6 +1,11 @@
 class UsuariosController < ApplicationController
   before_action :set_usuario, only: [:show, :update, :destroy]
 
+  def login
+    @usuario = Usuario.where(email: params[:email], senha: params[:senha])
+    json_response(@usuario)
+  end
+
   # GET /usuarios
   def index
     @usuarios = Usuario.all
