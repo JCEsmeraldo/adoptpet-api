@@ -20,7 +20,7 @@ class PetsController < ApplicationController
 
   # GET /pets/usuario/:id
   def pets_usuario
-    @pets = Pet.where(id_usuario: params[:id])
+    @pets = Pet.where(usuario_id: params[:id])
     json_response(@pets)
   end
 
@@ -40,7 +40,7 @@ class PetsController < ApplicationController
 
   def pet_params
     # whitelist params
-    params.permit(:nome, :data_nasc, :genero, :especie, :descricao, :id_usuario, :porte, :foto)
+    params.permit(:nome, :data_nasc, :genero, :especie, :descricao, :usuario_id, :porte, :foto)
   end
 
 
