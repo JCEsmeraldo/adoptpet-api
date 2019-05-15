@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_05_15_170358) do
+ActiveRecord::Schema.define(version: 2019_05_15_170819) do
 
   create_table "pedidos", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.bigint "pet_id"
@@ -30,9 +30,10 @@ ActiveRecord::Schema.define(version: 2019_05_15_170358) do
     t.datetime "updated_at", null: false
     t.string "especie"
     t.string "descricao"
-    t.integer "id_usuario"
     t.string "porte"
     t.binary "foto", limit: 4294967295
+    t.bigint "usuario_id"
+    t.index ["usuario_id"], name: "index_pets_on_usuario_id"
   end
 
   create_table "tipos", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
@@ -60,4 +61,5 @@ ActiveRecord::Schema.define(version: 2019_05_15_170358) do
 
   add_foreign_key "pedidos", "pets"
   add_foreign_key "pedidos", "usuarios"
+  add_foreign_key "pets", "usuarios"
 end
