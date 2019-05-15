@@ -1,0 +1,2 @@
+class PedidoAdocao < ApplicationRecord
+end
