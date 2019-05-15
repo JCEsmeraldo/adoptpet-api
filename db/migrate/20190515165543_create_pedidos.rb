@@ -1,6 +1,6 @@
-class CreatePedidoAdocaos < ActiveRecord::Migration[5.2]
+class CreatePedidos < ActiveRecord::Migration[5.2]
   def change
-    create_table :pedido_adocaos do |t|
+    create_table :pedidos do |t|
       t.integer :id_pet
       t.integer :id_usuario
       t.string :status

@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class PedidoAdocaoTest < ActiveSupport::TestCase
+class PedidoTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end
