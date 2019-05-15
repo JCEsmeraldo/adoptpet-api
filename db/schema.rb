@@ -10,14 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_05_15_164628) do
+ActiveRecord::Schema.define(version: 2019_05_15_170358) do
 
-  create_table "pedido_adocaos", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.integer "id_pet"
-    t.integer "id_usuario"
+  create_table "pedidos", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.bigint "pet_id"
+    t.bigint "usuario_id"
     t.string "status"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["pet_id"], name: "index_pedidos_on_pet_id"
+    t.index ["usuario_id"], name: "index_pedidos_on_usuario_id"
   end
 
   create_table "pets", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
@@ -56,4 +58,6 @@ ActiveRecord::Schema.define(version: 2019_05_15_164628) do
     t.datetime "updated_at", null: false
   end
 
+  add_foreign_key "pedidos", "pets"
+  add_foreign_key "pedidos", "usuarios"
 end
