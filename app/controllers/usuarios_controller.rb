@@ -29,6 +29,12 @@ class UsuariosController < ApplicationController
     json_response(@pedidos)
   end
 
+  # GET /usuarios/pedidos/:id
+  def show_pedidos_pendentes
+    @pedidos = Pedido.joins("inner join pets on pets.id = pedidos.pet_id inner join usuarios on usuarios.id = pets.usuario_id").where(:usuarios => {:id => 1}, :status => 'Pendente')
+    json_response(@pedidos)
+  end
+
   # PUT /usuarios/:id
   def update
     @usuario.update(usuario_params_update)
