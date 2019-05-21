@@ -8,14 +8,15 @@ class UsuariosController < ApplicationController
 
 
   def login
-    auth_object = Authentication.new(login_params)
-    # if auth_object.authenticate
+    @usuario = Usuario.where(email: params[:email], senha: params[:senha])
+    if(@usuario.any?)
+      auth_object = Authentication.new(login_params)
       render json: {
           message: "Login successful!", token: auth_object.generate_token }, status: :ok
-    # else
-    #   render json: {
-    #       message: "Incorrect email/password combination"}, status: :unauthorized
-    # end
+    else
+      render json: {
+          message: "Incorrect email/password combination"}, status: :unauthorized
+    end
   end
 
 
