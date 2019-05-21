@@ -1,10 +1,24 @@
 class UsuariosController < ApplicationController
   before_action :set_usuario, only: [:show, :update, :destroy]
 
-  def login
+  def login2
     @usuario = Usuario.where(email: params[:email], senha: params[:senha])
     json_response(@usuario)
   end
+
+
+  def login
+    auth_object = Authentication.new(login_params)
+    # if auth_object.authenticate
+      render json: {
+          message: "Login successful!", token: auth_object.generate_token }, status: :ok
+    # else
+    #   render json: {
+    #       message: "Incorrect email/password combination"}, status: :unauthorized
+    # end
+  end
+
+
 
   # GET /usuarios
   def index
@@ -61,6 +75,10 @@ class UsuariosController < ApplicationController
 
   def set_usuario
     @usuario = Usuario.find(params[:id])
+  end
+
+  def login_params
+    params.permit(:email, :senha)
   end
 
 end
