@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_05_15_170819) do
+ActiveRecord::Schema.define(version: 2019_05_24_231739) do
 
   create_table "pedidos", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.bigint "pet_id"
@@ -33,6 +33,7 @@ ActiveRecord::Schema.define(version: 2019_05_15_170819) do
     t.string "porte"
     t.binary "foto", limit: 4294967295
     t.bigint "usuario_id"
+    t.boolean "adotado"
     t.index ["usuario_id"], name: "index_pets_on_usuario_id"
   end
 
