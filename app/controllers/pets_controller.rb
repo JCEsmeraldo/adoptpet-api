@@ -7,6 +7,11 @@ class PetsController < ApplicationController
     json_response(@pets)
   end
 
+  def pets_nao_adotados
+    @pets = Pet.where(:adotado => false)
+    json_response(@pets)
+  end
+
   # POST /pets
   def create
     @pet = Pet.create!(pet_params)

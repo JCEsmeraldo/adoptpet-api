@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="75dd5070-50a4-4653-b063-8f135fd2efe3" name="Default Changelist" comment="" />
+    <list default="true" id="75dd5070-50a4-4653-b063-8f135fd2efe3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/app/controllers/pets_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/pets_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -23,17 +26,21 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/pedido.rb">
+        <entry file="file://$PROJECT_DIR$/app/controllers/pets_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+            <state relative-caret-position="135">
+              <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20190524231739_add_adotado_to_pets.rb">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/config/routes.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -66,13 +73,11 @@
         <option value="$PROJECT_DIR$/db/migrate/20190514204735_alter_pets_foto.rb" />
         <option value="$PROJECT_DIR$/Procfile" />
         <option value="$PROJECT_DIR$/db/migrate/20190515170819_add_usuario_to_pets.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/pets_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/pedidos_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/pet.rb" />
         <option value="$PROJECT_DIR$/app/models/json_web_token.rb" />
         <option value="$PROJECT_DIR$/app/controllers/authentication_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
-        <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/app/jwt/json_web_token.rb" />
@@ -83,6 +88,8 @@
         <option value="$PROJECT_DIR$/app/models/usuario.rb" />
         <option value="$PROJECT_DIR$/config/application.rb" />
         <option value="$PROJECT_DIR$/app/models/pedido.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/pets_controller.rb" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
       </list>
     </option>
   </component>
@@ -122,17 +129,6 @@
             <path>
               <item name="AdoptPet-API" type="b2602c69:ProjectViewProjectNode" />
               <item name="AdoptPet-API" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AdoptPet-API" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AdoptPet-API" type="462c0819:PsiDirectoryNode" />
-              <item name="db" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AdoptPet-API" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AdoptPet-API" type="462c0819:PsiDirectoryNode" />
-              <item name="db" type="462c0819:PsiDirectoryNode" />
-              <item name="migrate" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -307,18 +303,18 @@
       <workItem from="1558446719218" duration="2309000" />
       <workItem from="1558544037068" duration="368000" />
       <workItem from="1558706840297" duration="602000" />
-      <workItem from="1558736697974" duration="2435000" />
+      <workItem from="1558736697974" duration="3144000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52367000" />
+    <option name="totallyTimeSpent" value="53076000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1299" height="743" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1396648" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1396648" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -328,7 +324,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.262215" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.3534202" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.3534202" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -366,11 +362,16 @@
           <line>54</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="ruby-line">
+          <url>file://$PROJECT_DIR$/app/controllers/pets_controller.rb</url>
+          <line>16</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/AdoptPet_API@Development__AdoptPet_API.rcov" NAME="Development: AdoptPet-API Coverage Results" MODIFIED="1558738770757" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="AdoptPet-API" />
+    <SUITE FILE_PATH="coverage/AdoptPet_API@Development__AdoptPet_API.rcov" NAME="Development: AdoptPet-API Coverage Results" MODIFIED="1558740532600" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="AdoptPet-API" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/config/master.key">
@@ -413,13 +414,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/pets_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="439">
-          <caret line="48" column="5" lean-forward="true" selection-start-line="1" selection-start-column="2" selection-end-line="48" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -503,13 +497,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="24" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/auth/authentication.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -552,6 +539,9 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20190524231739_add_adotado_to_pets.rb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/pedido.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -559,8 +549,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20190524231739_add_adotado_to_pets.rb">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/app/controllers/pets_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">
