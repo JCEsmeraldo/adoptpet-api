@@ -6,11 +6,11 @@ class Pedido < ApplicationRecord
   attribute :email_usuario, :string
 
   def nome_usuario
-    pet.usuario.nome
+    usuario.nome
   end
 
   def email_usuario
-    pet.usuario.email
+    usuario.email
   end
 
   def nome_pet

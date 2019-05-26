@@ -46,7 +46,7 @@ class UsuariosController < ApplicationController
 
   # GET /usuarios/pedidos/:id
   def show_pedidos_pendentes
-    @pedidos = Pedido.joins("inner join pets on pets.id = pedidos.pet_id inner join usuarios on usuarios.id = pets.usuario_id").where(:usuarios => {:id => params[:id]}, :status => 'Pendente')
+    @pedidos = Pedido.joins("inner join pets on pets.id = pedidos.pet_id inner join usuarios on usuarios.id = pets.usuario_id").where(:usuarios => {:id => params[:id]}, :status => 'Pendente', :pets => {:adotado => false})
     json_response(@pedidos)
   end
 
