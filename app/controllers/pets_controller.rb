@@ -29,6 +29,12 @@ class PetsController < ApplicationController
     json_response(@pets)
   end
 
+  # GET /pets_adotados/:id
+  def pets_adotados
+    @pets = Pet.where(usuario_id: params[:id], adotado: true)
+    json_response(@pets)
+  end
+
   # PUT /pets/:id
   def update
     @pet.update(pet_params)
