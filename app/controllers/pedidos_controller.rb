@@ -24,6 +24,23 @@ class PedidosController < ApplicationController
     head :no_content
   end
 
+  # PUT /pedidos_resposta/:id
+  def pedidos_resposta
+    @pedido = Pedido.find(params['id'])
+    if (params['status'] == 'Aprovado')
+      @pet = Pet.find(@pedido.pet_id)
+      @pet.adotado = true
+      @pet.usuario_id = @pedido.usuario_id
+      @pet.save
+      @pedido.status = "Aprovado"
+      @pedido.save
+    else
+      @pedido.status = "Negado"
+      @pedido.save
+    end
+    json_response(@pedido, :updated)
+  end
+
   # DELETE /pedidos/:id
   def destroy
     @pedido.destroy

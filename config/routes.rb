@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   end
 
   match "/login" => "usuarios#login", :via => :post
+  match "/pedidos_resposta/:id" => "pedidos#pedidos_resposta", :via => :put, :constraints => { :id => /\d+/ }
   get "pets/usuarios/:id" => "pets#pets_usuario", :constraints => { :id => /\d+/ }
   get "pets_disponiveis/" => "pets#pets_nao_adotados"
   get "usuarios/pedidos/:id" => "usuarios#show_pedidos", :constraints => { :id => /\d+/ }
