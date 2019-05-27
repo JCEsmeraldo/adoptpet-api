@@ -51,7 +51,7 @@ class PetsController < ApplicationController
 
   def pet_params
     # whitelist params
-    params.permit(:nome, :data_nasc, :genero, :especie, :descricao, :usuario_id, :porte, :foto)
+    params.permit(:nome, :data_nasc, :genero, :especie, :descricao, :usuario_id, :porte, :foto, :adotado)
   end
 
 
