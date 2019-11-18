@@ -38,7 +38,8 @@ class PedidosController < ApplicationController
       @pedido.status = "Negado"
       @pedido.save
     end
-    json_response(@pedido, :updated)
+    # json_response(@pedido, :updated)
+    render status: 200
   end
 
   # DELETE /pedidos/:id
